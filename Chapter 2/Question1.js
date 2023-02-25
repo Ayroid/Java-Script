@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 let age = prompt("Enter Age: ")
 if(age>=10 && age<=20){
     console.log("Age is between 10 and 20")

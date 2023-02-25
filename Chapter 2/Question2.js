@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 let age = Number.parseInt(prompt("What's your age?"))
 switch(age){
     case 1:
