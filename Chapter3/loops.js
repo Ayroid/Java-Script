@@ -11,7 +11,7 @@ for(let i=0; i<10; i++){
 }
 
 //For in Loop
-for(let a in students){
+for(let a in "Ayroid"){
     console.log(a)
 }
 

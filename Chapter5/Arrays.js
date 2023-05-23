@@ -21,7 +21,7 @@
 //toString
 let n = [1, 17, 92, 23, 2];
 console.log(n.toString()); // Converts array to string
-console.log(n.join("~")); // Joins all the elements using a seperator
+console.log(typeof(n.join("~"))); // Joins all the elements using a seperator
 console.log(n.pop()); // Updates the original array returning the popped value
 n.push(6, 8);
 console.log(n);
@@ -84,3 +84,6 @@ let c = n.reduce((n1, n2) => {
   return n1+n2
 })
 console.log(c)
+
+let d = Array.from("12345678910")
+console.log(d)
