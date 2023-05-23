@@ -1,4 +1,4 @@
-const prompt =require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
 let a = [1, 2, 3, 4, 5]
 
