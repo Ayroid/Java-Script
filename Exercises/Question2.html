@@ -17,10 +17,9 @@
         let options = ['R', 'P', 'S']
         let play = true;
         while (play) {
-            let pChoice = prompt("Choose:  R, P or S")
+            let pChoice = prompt("Choose:  R, P or S").toUpperCase()
             let randomNumber = Math.floor(Math.random() * 3)
             let cChoice = options[randomNumber]
-            pChoice = pChoice.toUpperCase()
 
             if (pChoice===cChoice){
                 alert("DRAW!")

@@ -9,3 +9,5 @@ console.warn("HAHAHA"); // To show any warning
 console.log(console);
 
 console.log(document);
+let a = prompt("No")
+console.log(a)
