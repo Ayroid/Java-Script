@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: aliceblue;
+            flex-direction: column;
+        }
+
+        .joke-display {
+            background-color: white;
+            height: 5rem;
+            width: 80%;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem;
+            font-size: 2rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .random-button {
+            background-color: gold;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            font-weight: 500;
+            border-radius: 10px;
+        }
+
+        .random-button:hover {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="joke-display">
+
+        </div>
+        <div class="random-button" onclick="changeJoke()">RANDOM</div>
+    </div>
+
+    <script>
+        const techJokes = [
+            "Why do programmers prefer dark mode? Because light attracts bugs.",
+            "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25.",
+            "Why do programmers prefer iOS development over Android development? Because on iOS, there are no Java exceptions.",
+            "Why don't programmers like nature? It has too many bugs.",
+            "Why was the JavaScript developer sad? Because he didn't get any class.",
+            "Why was the computer cold? It left its Windows open.",
+            "What's the most used language in programming? Profanity.",
+            "Why do programmers always get Christmas and Halloween mixed up? Because Oct 31 == Dec 25.",
+            "Why do C# and Java developers keep breaking their keyboards? Because they use a strongly typed language.",
+            "Why was the math book sad? Because it had too many problems."
+        ];
+        function changeJoke() {
+            let randomJoke = techJokes[Math.floor(Math.random()*10)]
+            document.getElementsByClassName('joke-display')[0].innerHTML = randomJoke
+        }
+    </script>
+
+</body>
+
+</html>
