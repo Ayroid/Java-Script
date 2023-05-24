@@ -71,6 +71,7 @@
     </div>
 
     <script>
+        
         const techJokes = [
             "Why do programmers prefer dark mode? Because light attracts bugs.",
             "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25.",
@@ -93,6 +94,7 @@
             "Why did the developer start his own business? Because he didn't want to be a cog in the machine.",
             "Why did the programmer go broke? Because he couldn't find a way to cash in his cache."
         ];
+
         function changeJoke() {
             let randomJoke = techJokes[Math.floor(Math.random() * 20)]
             document.getElementsByClassName('joke-display')[0].innerHTML = randomJoke
