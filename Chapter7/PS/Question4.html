@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question4</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar {
+            background-color: aliceblue;
+        }
+
+        .nav-ul {
+            display: flex;
+            padding: 0 1rem;
+            font-size: 1.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .nav-li {
+            margin: 0 1rem;
+            padding: 2rem;
+            list-style: none;
+            /* background-color: red; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav-bar" id="nav-bar" onclick="changeColor()">
+        <ul class="nav-ul" id="nav-ul">
+            <li class="nav-li">HOME</li>
+            <li class="nav-li">ABOUT</li>
+            <li class="nav-li">PROJECTS</li>
+            <li class="nav-li">CONTACT</li>
+        </ul>
+    </nav>
+
+    <script>
+        function changeColor() {
+            Array.from(document.getElementsByTagName('li')).forEach((element)=>{
+                element.style.backgroundColor = "cyan"
+            })
+        }
+    </script>
+
+</body>
+
+</html>
