@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        .navbar{
+            background-color: aliceblue;
+            margin: 0%;
+            padding: 1rem;
+        }
+        .nav-ul{
+            display: flex;
+            list-style: none;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .nav-li{
+            margin: 0 1rem;
+            font-size: 1.5rem;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar" id="navbar" onclick="changeColor()">
+        <ul class="nav-ul">
+            <li class="nav-li" id="home">Home</li>
+            <li class="nav-li" id="about">About</li>
+            <li class="nav-li" id="skills">Skills</li>
+            <li class="nav-li" id="projects">Projects</li>
+            <li class="nav-li" id="about">About</li>
+        </ul>
+    </nav>
+
+    <script>
+        function changeColor(){
+            document.getElementById('navbar').firstElementChild.firstElementChild.style.color="red"
+        }
+    </script>
+
+</body>
+</html>
