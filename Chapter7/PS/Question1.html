@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,31 @@
     <title>Question1</title>
 
     <style>
-        body{
+        body {
             margin: 0%;
             padding: 0%;
         }
-        .navbar{
+
+        .navbar {
             background-color: aliceblue;
             margin: 0%;
             padding: 1rem;
         }
-        .nav-ul{
+
+        .nav-ul {
             display: flex;
             list-style: none;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        .nav-li{
+
+        .nav-li {
             margin: 0 1rem;
             font-size: 1.5rem;
         }
     </style>
 
 </head>
+
 <body>
     <nav class="navbar" id="navbar" onclick="changeColor()">
         <ul class="nav-ul">
@@ -40,10 +45,11 @@
     </nav>
 
     <script>
-        function changeColor(){
-            document.getElementById('navbar').firstElementChild.firstElementChild.style.color="red"
+        function changeColor() {
+            document.getElementById('navbar').firstElementChild.firstElementChild.style.color = "red"
         }
     </script>
 
 </body>
+
 </html>
