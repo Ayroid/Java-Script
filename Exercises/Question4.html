@@ -8,14 +8,13 @@
     <title>DIGITAL CLOCK</title>
 
     <style>
-        @font-face {
-            font-family: 'digital-7';
-            src: url('./DS-DIGI.TTF');
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&family=Lexend:wght@600&display=swap');
 
         * {
             margin: 0;
             padding: 0;
+            overflow-y: hidden;
+            overflow-x: hidden;
         }
 
         .main-box {
@@ -25,23 +24,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            font-family: 'Lexend', sans-serif;
+            color: white;
+            font-size: 37dvw;
         }
 
-        .clock-box {
-            height: 30dvh;
-            width: 50dvw;
+        .divider{
+            position: absolute;
+            height: 100dvh;
+            width: 2dvw;
             background-color: white;
-            border-radius: 10px;
-            font-family: 'digital-7';
-            font-size: 18rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
 
-        .clock-button {
+        /* .clock-button {
             height: 5dvh;
             width: 20dvw;
             border-radius: 10px 10px 0 0;
@@ -71,7 +69,7 @@
             }
         }
 
-        .clock-record{
+        .clock-record {
             height: fit-content;
             max-height: 50dvh;
             width: 48dvw;
@@ -89,43 +87,39 @@
             padding: 1rem;
         }
 
-        .record{
+        .record {
             background-color: white;
             border-radius: 10px;
             padding: 1rem 2rem;
             margin: 0.4rem;
             width: 9.5rem;
-        }
-
+        } */
     </style>
 
 </head>
 
 <body>
-    <div class="main-box">
-        <!-- <div class="clock-button" id="clock-button"></div> -->
-        <div class="clock-box" id="clock-box"></div>
-        <!-- <div class="clock-record"></div> -->
+    <div class="divider"></div>
+    <div class="main-box" id="main-box">
     </div>
-
     <script>
         addEventListener("DOMContentLoaded", () => {
-            let clockBox = document.getElementById('clock-box');
+            let clockBox = document.getElementById('main-box');
             setInterval(() => {
                 let date = new Date();
                 let hours = date.getHours();
-                if(String(hours).length == 1){
+                if (String(hours).length == 1) {
                     hours = `0${hours}`
                 }
                 let minutes = date.getMinutes();
-                if(String(minutes).length == 1){
+                if (String(minutes).length == 1) {
                     minutes = `0${minutes}`
                 }
-                let seconds = date.getSeconds();
-                if(String(seconds).length == 1){
-                    seconds = `0${seconds}`
-                }
-                clockBox.innerHTML = `${hours}:${minutes}:${seconds}`;
+                // let seconds = date.getSeconds();
+                // if (String(seconds).length == 1) {
+                //     seconds = `0${seconds}`
+                // }
+                clockBox.innerHTML = `${hours} ${minutes}`;
             }, 1000);
         })
         // let clockbutton = document.getElementById('clock-button');
