@@ -35,7 +35,7 @@
         padding: 1dvw 0;
         position: sticky;
         top: 0.001px;
-        background-color: antiquewhite;
+        background-color: rgb(10, 10, 10);
     }
 
     .nav-header {
@@ -44,6 +44,7 @@
         align-items: center;
         width: 100%;
         padding-inline: 1dvw;
+        color: white;
     }
 
     .nav-links {
@@ -68,8 +69,8 @@
     .nav-toggle {
         height: 5dvh;
         width: 5dvh;
-        background-color: black;
-        border-radius: 50%;
+        background-color: white;
+        border-radius: 25% 10% 25% 10%;
         display: none;
         z-index: 1;
     }
@@ -127,6 +128,10 @@
 
         .nav-toggle {
             display: block;
+            z-index: 2;
+        }
+
+        .nav-header{
             z-index: 2;
         }
 
